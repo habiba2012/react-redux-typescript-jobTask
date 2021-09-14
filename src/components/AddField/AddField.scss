@@ -1,0 +1,51 @@
+.addField {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1.7rem;
+
+  label {
+    font-size: 24px;
+  }
+
+  input {
+    width: 25rem;
+    padding-inline: 1rem;
+    height: 3rem;
+    outline: none;
+    border: 2px solid black;
+    font-size: 24px;
+  }
+
+  button {
+    margin-top: 0.5rem;
+    width: 15rem;
+    height: 3rem;
+    margin-left: 10.5rem;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 1px 2px black;
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .addField {
+    align-items: center;
+
+    input {
+      width: unset !important;
+    }
+
+    button {
+      margin-left: 0;
+    }
+  }
+}

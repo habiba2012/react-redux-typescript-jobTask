@@ -1,0 +1,44 @@
+.field {
+  margin-bottom: 1rem;
+  .fieldHeader {
+    padding: 0 1em;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+
+    input {
+      width: 20rem;
+      height: 3.5rem;
+      outline: none;
+      color: 2px solid black;
+      font-size: 24px;
+      padding-inline: 0.5rem;
+    }
+
+    .field__icons {
+      display: flex;
+      align-items: center;
+
+      .field__icon {
+        width: 2rem;
+        height: 2rem;
+
+        &:hover {
+          color: blue;
+          cursor: pointer;
+        }
+      }
+
+      .field__icon-dropdown {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+
+  .mainBody {
+    width: 100%;
+  }
+}

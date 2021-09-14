@@ -1,0 +1,40 @@
+.wireframe {
+  margin: 5rem;
+  padding: 3rem;
+  border: 2px solid black;
+
+  .main {
+    display: flex;
+
+    .mobile {
+      display: none;
+    }
+
+    .wireframe__fields {
+      width: 100%;
+      margin-right: 10rem;
+    }
+
+    .computer {
+      display: initial;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .main {
+    flex-direction: column;
+
+    .mobile {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+
+    .computer {
+      display: none !important;
+    }
+  }
+}

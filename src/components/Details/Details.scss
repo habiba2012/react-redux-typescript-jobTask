@@ -1,0 +1,10 @@
+.details {
+  border: 2px solid black;
+  padding: 3rem;
+}
+
+@media (max-width: 960px) {
+  .details {
+    padding: 1rem !important;
+  }
+}
